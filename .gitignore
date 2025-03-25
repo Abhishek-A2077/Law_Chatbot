@@ -1,0 +1,33 @@
+# Ignore environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore API keys or secret files
+api keys.txt
+secrets.json
+config.json
+
+# Ignore Python cache and dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+venv/
+.env/
+.venv/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
