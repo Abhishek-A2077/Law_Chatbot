@@ -132,14 +132,15 @@ def setup_model():
     )
     
     # Load the base LLaMa model
-    base_model = "meta-llama/Llama-3-8B-Instruct"  # Use the specific version you have access to
+    base_model = "varma007ut/Indian_Legal_Assitant"  # Correct capitalization
     
     # Load model with quantization
     model = AutoModelForCausalLM.from_pretrained(
         base_model,
         quantization_config=bnb_config,
         device_map="auto",
-        trust_remote_code=True
+        trust_remote_code=True,
+        token=os.environ.get("HUGGINGFACE_TOKEN")
     )
     
     # Load tokenizer
